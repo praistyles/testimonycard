@@ -49,17 +49,32 @@ p{
 
 }
 
+.quotes{
+    border-radius: 0%;
+    border: none;
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    right: 25%;
+    z-index: -1;
+
+
+}
+
 .allcont{
     margin: 2rem;
 
 }
 
 .dan{
+    position: relative;
     border-radius: 5px;
     background-color: #7541c8;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     box-shadow: 1px 1px 10px #00000070;
+     z-index: 0;
 }
 
 .dantop, .jontop, .jeantop, .pattop, .kiratop{
@@ -129,7 +144,7 @@ p{
 @media(min-width: 576px){
     .allcont{
         display: flex;
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
         gap: 1rem;
     }
@@ -138,12 +153,13 @@ p{
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
+        flex-basis: 70%;
         
     
     }
 
     .rightcont{
-        flex-basis: 35%;
+        flex-basis: 20%;
         margin-top: 2rem;
     }
 
